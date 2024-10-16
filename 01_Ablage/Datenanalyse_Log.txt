@@ -1,0 +1,306 @@
+Fehlende Werte in global_temp:
+dt                                   0
+AverageTemperature               32651
+AverageTemperatureUncertainty    31912
+Country                              0
+dtype: int64
+Fehlende Werte in holidays_events:
+date           0
+type           0
+locale         0
+locale_name    0
+description    0
+transferred    0
+dtype: int64
+Fehlende Werte in oil:
+date           0
+dcoilwtico    43
+dtype: int64
+Fehlende Werte in stores:
+store_nbr    0
+city         0
+state        0
+type         0
+cluster      0
+dtype: int64
+Fehlende Werte in transactions:
+date            0
+store_nbr       0
+transactions    0
+dtype: int64
+Fehlende Werte in walmart_sales:
+Unnamed: 0      0
+Store           0
+Dept            0
+Date            0
+Weekly_Sales    0
+IsHoliday       0
+Temperature     0
+Fuel_Price      0
+MarkDown1       0
+MarkDown2       0
+MarkDown3       0
+MarkDown4       0
+MarkDown5       0
+CPI             0
+Unemployment    0
+Type            0
+Size            0
+Super_Bowl      0
+Labor_Day       0
+Thanksgiving    0
+Christmas       0
+week            0
+month           0
+year            0
+dtype: int64
+Erste Datumswerte in global_temp:
+0   1743-11-01
+5   1744-04-01
+6   1744-05-01
+7   1744-06-01
+8   1744-07-01
+Name: dt, dtype: datetime64[ns]
+Erste Datumswerte in transactions:
+0   2013-01-01
+1   2013-01-02
+2   2013-01-02
+3   2013-01-02
+4   2013-01-02
+Name: date, dtype: datetime64[ns]
+Erste Datumswerte in oil:
+0   2013-01-01
+1   2013-01-02
+2   2013-01-03
+3   2013-01-04
+4   2013-01-07
+Name: date, dtype: datetime64[ns]
+Erste Datumswerte in walmart_sales:
+0   2010-02-05
+1   2010-02-05
+2   2010-02-05
+3   2010-02-05
+4   2010-02-05
+Name: Date, dtype: datetime64[ns]
+Global Land Temperatures - Beschreibende Statistik:
+                                  dt  AverageTemperature  \
+count                         544811       544811.000000   
+mean   1913-08-08 18:20:24.887162624           17.193354   
+min              1743-11-01 00:00:00          -37.658000   
+25%              1869-11-01 00:00:00           10.025000   
+50%              1919-08-01 00:00:00           20.901000   
+75%              1966-10-01 00:00:00           25.814000   
+max              2013-09-01 00:00:00           38.842000   
+std                              NaN           10.953966   
+
+       AverageTemperatureUncertainty  
+count                  544811.000000  
+mean                        1.019190  
+min                         0.052000  
+25%                         0.323000  
+50%                         0.571000  
+75%                         1.207000  
+max                        15.003000  
+std                         1.202634  
+Transactions (Store Sales) - Beschreibende Statistik:
+                                date     store_nbr  transactions
+count                          83488  83488.000000  83488.000000
+mean   2015-05-20 16:07:40.866232064     26.939237   1694.602158
+min              2013-01-01 00:00:00      1.000000      5.000000
+25%              2014-03-27 00:00:00     13.000000   1046.000000
+50%              2015-06-08 00:00:00     27.000000   1393.000000
+75%              2016-07-14 06:00:00     40.000000   2079.000000
+max              2017-08-15 00:00:00     54.000000   8359.000000
+std                              NaN     15.608204    963.286644
+Oil Prices - Beschreibende Statistik:
+                      date   dcoilwtico
+count                 1218  1217.000000
+mean   2015-05-02 12:00:00    67.661824
+min    2013-01-01 00:00:00    26.190000
+25%    2014-03-03 06:00:00    46.410000
+50%    2015-05-02 12:00:00    53.180000
+75%    2016-06-30 18:00:00    95.710000
+max    2017-08-31 00:00:00   110.620000
+std                    NaN    25.633068
+Walmart Sales - Beschreibende Statistik:
+          Unnamed: 0          Store           Dept  \
+count  420212.000000  420212.000000  420212.000000   
+mean   210736.390089      22.195611      44.241309   
+min         0.000000       1.000000       1.000000   
+25%    105299.750000      11.000000      18.000000   
+50%    210775.500000      22.000000      37.000000   
+75%    316116.250000      33.000000      74.000000   
+max    421569.000000      45.000000      99.000000   
+std    121715.773081      12.787236      30.508819   
+
+                                Date   Weekly_Sales    Temperature  \
+count                         420212  420212.000000  420212.000000   
+mean   2011-06-18 07:35:12.682170112   16033.114591      60.090599   
+min              2010-02-05 00:00:00       0.010000      -2.060000   
+25%              2010-10-08 00:00:00    2120.130000      46.680000   
+50%              2011-06-17 00:00:00    7661.700000      62.090000   
+75%              2012-02-24 00:00:00   20271.265000      74.280000   
+max              2012-10-26 00:00:00  693099.360000     100.140000   
+std                              NaN   22729.492116      18.447857   
+
+          Fuel_Price      MarkDown1      MarkDown2      MarkDown3  \
+count  420212.000000  420212.000000  420212.000000  420212.000000   
+mean        3.360890    2590.323565     878.905242     468.845949   
+min         2.472000       0.000000    -265.760000     -29.100000   
+25%         2.933000       0.000000       0.000000       0.000000   
+50%         3.452000       0.000000       0.000000       0.000000   
+75%         3.738000    2809.050000       2.400000       4.540000   
+max         4.468000   88646.760000  104519.540000  141630.610000   
+std         0.458519    6053.415601    5076.928566    5534.069859   
+
+           MarkDown4      MarkDown5            CPI   Unemployment  \
+count  420212.000000  420212.000000  420212.000000  420212.000000   
+mean     1083.534361    1662.805002     171.212496       7.960000   
+min         0.000000       0.000000     126.064000       3.879000   
+25%         0.000000       0.000000     132.022667       6.891000   
+50%         0.000000       0.000000     182.350989       7.866000   
+75%       425.290000    2168.040000     212.445487       8.567000   
+max     67474.850000  108519.280000     227.232807      14.313000   
+std      3896.068938    4206.209357      39.162445       1.863879   
+
+                Size           week          month           year  
+count  420212.000000  420212.000000  420212.000000  420212.000000  
+mean   136749.732787      25.828408       6.449866    2010.968454  
+min     34875.000000       1.000000       1.000000    2010.000000  
+25%     93638.000000      14.000000       4.000000    2010.000000  
+50%    140167.000000      26.000000       6.000000    2011.000000  
+75%    202505.000000      38.000000       9.000000    2012.000000  
+max    219622.000000      52.000000      12.000000    2012.000000  
+std     60993.084568      14.152489       3.243397       0.796898  
+Einzigartige Werte in der Spalte 'Type': ['A' 'B' 'C']
+Erste fünf Zeilen der Spalte 'Type' nach Umwandlung:
+0    1
+1    1
+2    1
+3    1
+4    1
+Name: Type, dtype: int64
+Kombinierte Transaktionsdaten mit Temperaturdaten (USA):
+           date  store_nbr  transactions         dt  AverageTemperature  \
+232  2013-01-01         25           770 2013-01-01              -2.155   
+474  2013-02-01          1          1806 2013-02-01              -1.216   
+716  2013-02-01          2          1977 2013-02-01              -1.216   
+958  2013-02-01          3          3230 2013-02-01              -1.216   
+1200 2013-02-01          4          1520 2013-02-01              -1.216   
+
+      AverageTemperatureUncertainty        Country  
+232                           0.185  United States  
+474                           0.216  United States  
+716                           0.216  United States  
+958                           0.216  United States  
+1200                          0.216  United States  
+Kombinierte Walmart-Verkäufe mit Temperaturdaten (USA):
+      Unnamed: 0  Store  Dept       Date  Weekly_Sales  IsHoliday  \
+232         2433      1     1 2010-10-01      20094.19      False   
+474         2434      1     2 2010-10-01      45829.02      False   
+716         2435      1     3 2010-10-01       9775.17      False   
+958         2436      1     4 2010-10-01      34912.45      False   
+1200        2437      1     5 2010-10-01      23381.38      False   
+
+      Temperature  Fuel_Price  MarkDown1  MarkDown2  ...  Labor_Day  \
+232         71.89       2.603        0.0        0.0  ...      False   
+474         71.89       2.603        0.0        0.0  ...      False   
+716         71.89       2.603        0.0        0.0  ...      False   
+958         71.89       2.603        0.0        0.0  ...      False   
+1200        71.89       2.603        0.0        0.0  ...      False   
+
+      Thanksgiving  Christmas  week  month  year         dt  \
+232          False      False    39     10  2010 2010-10-01   
+474          False      False    39     10  2010 2010-10-01   
+716          False      False    39     10  2010 2010-10-01   
+958          False      False    39     10  2010 2010-10-01   
+1200         False      False    39     10  2010 2010-10-01   
+
+      AverageTemperature  AverageTemperatureUncertainty        Country  
+232               10.913                          0.053  United States  
+474               10.913                          0.053  United States  
+716               10.913                          0.053  United States  
+958               10.913                          0.053  United States  
+1200              10.913                          0.053  United States  
+
+[5 rows x 28 columns]
+Datentypen von monatlichen Transaktionen und Temperaturen:
+transactions          float64
+AverageTemperature    float64
+dtype: object
+   transactions  AverageTemperature
+0    770.000000              -2.155
+1   1702.217391              -1.216
+2   1728.782609               2.289
+3   1775.608696               6.970
+4   1968.434783              14.073
+Nicht-numerische Transaktionen:
+Empty DataFrame
+Columns: [year_month, transactions, AverageTemperature]
+Index: []
+Nicht-numerische Temperaturen:
+  year_month  transactions  AverageTemperature
+0    2013-01    770.000000              -2.155
+1    2013-02   1702.217391              -1.216
+NaN-Werte nach der Konvertierung:
+year_month            0
+transactions          0
+AverageTemperature    0
+dtype: int64
+Datentypen von monatlichen Transaktionen und Temperaturen:
+transactions          float64
+AverageTemperature    float64
+dtype: object
+   transactions  AverageTemperature
+0    770.000000              -2.155
+1   1702.217391              -1.216
+2   1728.782609               2.289
+3   1775.608696               6.970
+4   1968.434783              14.073
+Nicht-numerische Transaktionen:
+Empty DataFrame
+Columns: [year_month, transactions, AverageTemperature]
+Index: []
+Nicht-numerische Temperaturen:
+  year_month  transactions  AverageTemperature
+0    2013-01    770.000000              -2.155
+1    2013-02   1702.217391              -1.216
+NaN-Werte nach der Konvertierung:
+year_month            0
+transactions          0
+AverageTemperature    0
+dtype: int64
+Visualisierung gespeichert unter: 01_Ablage\Verkaeufe_vs_Temperatur_Store_Sales.png
+Steigung (Einfluss der Temperatur auf Verkäufe):[24.60210712]
+Intercept: 1451.660745747453
+Datentypen von monatlichen Walmart-Verkäufen und Temperaturen:
+Weekly_Sales          float64
+AverageTemperature    float64
+dtype: object
+   Weekly_Sales  AverageTemperature
+0  14431.171032              10.913
+1  14802.393774               8.582
+2  16311.509698              22.722
+3  16478.487007              19.954
+Nicht-numerische Walmart-Verkäufe:
+Empty DataFrame
+Columns: [year_month, Weekly_Sales, AverageTemperature]
+Index: []
+Nicht-numerische Temperaturen:
+Empty DataFrame
+Columns: [year_month, Weekly_Sales, AverageTemperature]
+Index: []
+NaN-Werte nach der Konvertierung in Walmart-Daten:
+year_month            0
+Weekly_Sales          0
+AverageTemperature    0
+dtype: int64
+Visualisierung gespeichert unter: 01_Ablage\Walmart_Verkaeufe_vs_Temperatur.png
+Steigung (Einfluss der Temperatur auf Walmart Verkäufe): [141.57871965]
+Intercept: 13305.367732815026
+Vorhersagen: [14844.84553841 15822.62164502]
+Vorhersagen: [14844.84553841 15822.62164502]
+Mean Squared Error: 464.73730490179327
+R^2 Score: 0.6924762115460531
+Vorhergesagte Verkäufe für zukünftige Temperaturen: [15822.62164502 15822.62164502 15822.62164502 15822.62164502]
+Visualisierung gespeichert unter: 01_Ablage\Tatsächliche_vs_Vorhergesagte_Verkaeufe_Random_Forest.png
